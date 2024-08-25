@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-emerald-400 w-screen h-screen">
+    <header class=" pl-20 mx-20 ">
+        <nav class="pt-10 flex flex-auto">
+            <div class="navbar flex gap-8">
+                <div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-Rectangle flex hover:bg-emerald-600">
+                            <div><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h7" />
+                                </svg></div>
+                            <div>
+                                <h2 class="text-white text-2xl  hover:text-black">MENU</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-ghost btn-Rectangle flex hover:bg-emerald-600">
+                        <div class="flex gap-2">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h2 class="text-white text-2xl  hover:text-black">SREARCH</h2>
+                            </div>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+            <div>
+                <H1 class="bg-white text-5xl text-green-900 font-black italic w-fit ml-9 mt-7">BANGLA<span
+                        class="text-red-700">DESH</span>BANK</H1>
+            </div>
+        </nav>
+    </header>
+    <main class="mt-36 mx-40">
+        <section>
+            <div class="grid grid-cols-3 gap-3">
+                <div class="bg-cyan-500 w-9/12 mx-auto p-16 rounded-xl shadow-lg">
+                    <h2 class="text-3xl text-white font-semibold mb-3">Deposite</h2>
+                    <h1 class="text-6xl text-black font-medium">$ <span>00</span></h1>
+                </div>
+                <div class="bg-red-400 w-9/12 mx-auto p-16 rounded-xl shadow-lg">
+                    <h2 class="text-3xl text-white font-semibold mb-3">Withdraw</h2>
+                    <h1 class="text-6xl text-black font-medium">$ <span>00</span></h1>
+                </div>
+                <div class="bg-green-600 w-9/12 mx-auto p-16 rounded-xl shadow-lg">
+                    <h2 class="text-3xl text-white font-semibold mb-3">Balance</h2>
+                    <h1 class="text-6xl text-black font-medium">$ <span>00</span></h1>
+                </div>
+
+            </div>
+        </section>
+        <section class="mt-20 mx-32">
+            <div class="grid grid-cols-2 gap-20">
+                <div class="bg-green-800 rounded-lg p-20">
+                    <h2 class="text-white text-2xl font-medium pb-5">Deposite Amount</h2>
+                    <div class=" ">
+                        <input type="number" placeholder="Your Amount"
+                            class="input input-bordered input-success text-white placeholder-white  w-full max-w-xs bg-cyan-400" /> <br>
+                        <button class="btn bg-blue-900 text-white text-xl hover:text-2xl mt-3 px-10 shadow-xl shadow-black">Deposite</button>
+                    </div>
+
+                </div>
+                <div class="bg-violet-500 rounded-lg p-20">
+                    <h2 class="text-white text-2xl font-medium pb-5">Withdraw Amount</h2>
+                    <div class=" ">
+                        <input type="number" placeholder="Your Amount"
+                            class="input input-bordered input-success text-white placeholder-white  w-full max-w-xs bg-cyan-400" /> <br>
+                        <button class="btn bg-blue-900 text-white text-xl hover:text-2xl mt-3 px-10 shadow-xl shadow-black">Withdraw</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
