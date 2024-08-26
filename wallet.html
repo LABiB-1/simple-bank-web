@@ -58,15 +58,15 @@
             <div class="grid grid-cols-3 gap-3">
                 <div class="bg-cyan-500 w-9/12 mx-auto p-16 rounded-xl shadow-lg">
                     <h2 class="text-3xl text-white font-semibold mb-3">Deposite</h2>
-                    <h1 class="text-6xl text-black font-medium">$ <span>00</span></h1>
+                    <h1 class="text-6xl text-black font-medium">$ <span id="deposite-current">00</span></h1>
                 </div>
                 <div class="bg-red-400 w-9/12 mx-auto p-16 rounded-xl shadow-lg">
                     <h2 class="text-3xl text-white font-semibold mb-3">Withdraw</h2>
-                    <h1 class="text-6xl text-black font-medium">$ <span>00</span></h1>
+                    <h1 class="text-6xl text-black font-medium">$ <span id="withdraw-current">00</span></h1>
                 </div>
                 <div class="bg-green-600 w-9/12 mx-auto p-16 rounded-xl shadow-lg">
                     <h2 class="text-3xl text-white font-semibold mb-3">Balance</h2>
-                    <h1 class="text-6xl text-black font-medium">$ <span>00</span></h1>
+                    <h1 class="text-6xl text-black font-medium">$ <span id="balance-amount">00</span></h1>
                 </div>
 
             </div>
@@ -75,10 +75,11 @@
             <div class="grid grid-cols-2 gap-20">
                 <div class="bg-green-800 rounded-lg p-20">
                     <h2 class="text-white text-2xl font-medium pb-5">Deposite Amount</h2>
-                    <div class=" ">
+                    <div>
                         <input type="number" placeholder="Your Amount"
+                            id="deposite-amount"
                             class="input input-bordered input-success text-white placeholder-white  w-full max-w-xs bg-cyan-400" /> <br>
-                        <button class="btn bg-blue-900 text-white text-xl hover:text-2xl mt-3 px-10 shadow-xl shadow-black">Deposite</button>
+                        <button id="deposite-btn" class="btn bg-blue-900 text-white text-xl hover:text-2xl mt-3 px-10 shadow-xl shadow-black">Deposite</button>
                     </div>
 
                 </div>
@@ -86,15 +87,17 @@
                     <h2 class="text-white text-2xl font-medium pb-5">Withdraw Amount</h2>
                     <div class=" ">
                         <input type="number" placeholder="Your Amount"
+                            id="withdraw-amount"
                             class="input input-bordered input-success text-white placeholder-white  w-full max-w-xs bg-cyan-400" /> <br>
-                        <button class="btn bg-blue-900 text-white text-xl hover:text-2xl mt-3 px-10 shadow-xl shadow-black">Withdraw</button>
+                        <button id="withdraw-btn" class="btn bg-blue-900 text-white text-xl hover:text-2xl mt-3 px-10 shadow-xl shadow-black">Withdraw</button>
                     </div>
 
                 </div>
             </div>
         </section>
     </main>
-
+    <script src="javascript/wallet.js"></script>
+    
 </body>
 
 </html>

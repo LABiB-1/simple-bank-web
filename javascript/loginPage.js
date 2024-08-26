@@ -12,4 +12,6 @@ document.getElementById('login-btn').addEventListener('click', function(){
         alert('incorrect email or password')
     }
 
+    userPass.value = '';
+
 })
