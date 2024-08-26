@@ -10,13 +10,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-emerald-400 w-screen h-screen">
-    <header class=" pl-20 mx-20 ">
-        <nav class="pt-10 flex flex-auto">
+<body class="bg-emerald-400 w-screen">
+    <header class=" lg:pl-20 pl-3 lg:mx-20 mx-5">
+        <nav class="pt-10 lg:flex flex-auto">
             <div class="navbar flex gap-8">
                 <div>
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost btn-Rectangle flex hover:bg-emerald-600">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-Rectangle sm:flex hover:bg-emerald-600">
                             <div><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -55,7 +55,7 @@
     </header>
     <main class="mt-36 mx-40">
         <section>
-            <div class="grid grid-cols-3 gap-3">
+            <div class="xl:grid grid-cols-3 gap-3">
                 <div class="bg-cyan-500 w-9/12 mx-auto p-16 rounded-xl shadow-lg">
                     <h2 class="text-3xl text-white font-semibold mb-3">Deposite</h2>
                     <h1 class="text-6xl text-black font-medium">$ <span id="deposite-current">00</span></h1>
@@ -71,9 +71,9 @@
 
             </div>
         </section>
-        <section class="mt-20 mx-32">
-            <div class="grid grid-cols-2 gap-20">
-                <div class="bg-green-800 rounded-lg p-20">
+        <section class="mt-20 xl:mx-28 lg:mx-6 mx-3">
+            <div class="xl:grid xl:grid-cols-2 xl:gap-20">
+                <div class="bg-green-800 rounded-lg lg:p-20 p-8 mb-5">
                     <h2 class="text-white text-2xl font-medium pb-5">Deposite Amount</h2>
                     <div>
                         <input type="number" placeholder="Your Amount"
@@ -82,8 +82,8 @@
                         <button id="deposite-btn" class="btn bg-blue-900 text-white text-xl hover:text-2xl mt-3 px-10 shadow-xl shadow-black">Deposite</button>
                     </div>
 
-                </div>
-                <div class="bg-violet-500 rounded-lg p-20">
+                </div> 
+                <div class="bg-violet-500 rounded-lg lg:p-20 p-8 mb-5">
                     <h2 class="text-white text-2xl font-medium pb-5">Withdraw Amount</h2>
                     <div class=" ">
                         <input type="number" placeholder="Your Amount"
@@ -96,6 +96,7 @@
             </div>
         </section>
     </main>
+    <footer class="bg-emerald-500 h-10 pt-1 mt-32 text-white text-center text-base font-medium">All Rights Reserved</footer>
     <script src="javascript/wallet.js"></script>
     
 </body>
